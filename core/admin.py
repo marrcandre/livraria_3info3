@@ -51,7 +51,6 @@ class UserAdmin(BaseUserAdmin):
         ),
     )
 
-...
 @admin.register(Autor)
 class AutorAdmin(admin.ModelAdmin):
     list_display = ('nome', 'email')
