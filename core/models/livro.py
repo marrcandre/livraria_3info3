@@ -18,7 +18,7 @@ class Livro(models.Model):
     capa = models.ForeignKey(
         Image,
         related_name="+",
-        on_delete=models.CASCADE,
+        on_delete=models.SET_NULL,
         null=True,
         blank=True,
         default=None,
