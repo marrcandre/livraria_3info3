@@ -11,7 +11,13 @@ from drf_spectacular.views import (
 from rest_framework.routers import DefaultRouter
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
-from core.views import CategoriaViewSet, EditoraViewSet, UserViewSet, AutorViewSet, LivroViewSet
+from core.views import (
+    AutorViewSet,
+    CategoriaViewSet,
+    EditoraViewSet,
+    LivroViewSet,
+    UserViewSet,
+)
 
 router = DefaultRouter()
 router.register(r"autores", AutorViewSet, basename="autores")
