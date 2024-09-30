@@ -5,7 +5,7 @@ from core.serializers import CompraSerializer, CriarEditarCompraSerializer
 
 
 class CompraViewSet(ModelViewSet):
-    queryset = Compra.objects.all()
+    queryset = Compra.objects.order_by("-id")
     serializer_class = CompraSerializer
 
     def get_serializer_class(self):
