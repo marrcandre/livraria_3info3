@@ -1,7 +1,7 @@
 from rest_framework.serializers import (
     CharField,
-    CurrentUserDefault,  # novo
-    HiddenField,  # novo
+    CurrentUserDefault,
+    HiddenField,
     ModelSerializer,
     SerializerMethodField,
 )

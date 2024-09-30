@@ -1,13 +1,13 @@
-from .user import UserSerializer
+from .autor import AutorSerializer
 from .categoria import CategoriaSerializer
 from .compra import (
     CompraSerializer,
     CriarEditarCompraSerializer,
-    ListarCompraSerializer, # novo
-    ItensCompraSerializer,
     CriarEditarItensCompraSerializer,
-    ListarItensCompraSerializer, # novo
+    ItensCompraSerializer,
+    ListarCompraSerializer,
+    ListarItensCompraSerializer,
 )
 from .editora import EditoraSerializer
-from .autor import AutorSerializer
 from .livro import LivroDetailSerializer, LivroListSerializer, LivroSerializer
+from .user import UserSerializer
